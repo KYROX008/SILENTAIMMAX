@@ -1,7 +1,7 @@
 Clear-Host
 
 # --- Configuration ---
-$procName = "ShellHost"
+$procName = "SILENTAIM"
 $tempDir = [System.IO.Path]::GetTempPath()
 $out = Join-Path $tempDir "SILENTAIM.exe"
 
